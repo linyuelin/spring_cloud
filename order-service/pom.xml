@@ -25,6 +25,31 @@
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>
+         <!--eurekaクライアント側-->
+<!--        <dependency>-->
+<!--			<groupId>org.springframework.cloud</groupId>-->
+<!--			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
+<!--		</dependency>-->
+
+        <!--feignクライアント側-->
+         <dependency>
+			 <groupId>org.springframework.cloud</groupId>
+             <artifactId>spring-cloud-starter-openfeign</artifactId>
+         </dependency>
+			
+			
+	   <dependency>
+         <groupId>com.alibaba.cloud</groupId>
+         <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        
+         <!--手作りのfeign のapiを導入する-->
+        <dependency>
+			<groupId>cn.itcast.demo</groupId>
+			<artifactId>feign-api</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
     </dependencies>
     <build>
         <plugins>
